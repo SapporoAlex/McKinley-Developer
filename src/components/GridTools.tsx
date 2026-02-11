@@ -1,23 +1,46 @@
 import React from 'react';
-import toolsData from '../data/tools.json';
-import ToolCard from './ToolCard';
 import '../assets/GridTools.scss';
 import { useTranslation } from 'react-i18next'
 
 const GridTools: React.FC = () => {
     const {t} = useTranslation();
+    
+    const tools = [
+        { id: '1', img: '/html.png', alt: 'HTML5' },
+        { id: '2', img: '/css.png', alt: 'CSS3' },
+        { id: '3', img: '/ts.png', alt: 'TypeScript' },
+        { id: '4', img: '/react.png', alt: 'React' },
+        { id: '5', img: '/vue.png', alt: 'Vue' },
+        { id: '6', img: '/astro.png', alt: 'Astro' },
+        // { id: '7', img: '/django.png', alt: 'Django' },
+    ];
+    
     return (
         <section id="tools" className="tools-section">
-                <div className="main-container">
-            <h2>{t('tools.title')}</h2>
-            <div className="grid-tools">
-            {toolsData.map((tool: any) => (
-              <ToolCard key={tool.id} img={tool.img} alt={tool.alt} />
-            ))}
-            </div>
+            <div className="main-container">
+                <h1 lang="en">Toolbox</h1>
+                <div className="grid-tools">
+                    {tools.map((tool) => (
+                        <div key={tool.id} className="tool-card">
+                            <div className="tool-flip-card">
+                                <div className="tool-flip-inner">
+                                    <div className="tool-flip-front">
+                                        <img src={tool.img} alt={tool.alt}/>
+                                    </div>
+                                    <div className="tool-flip-back">
+                                        <img src={tool.img} 
+                                        alt={tool.alt} 
+                                        style={{ transform: "scaleX(-1)" }}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
-        );
-    };
+    );
+};
 
 export default GridTools;

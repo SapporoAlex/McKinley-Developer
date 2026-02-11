@@ -1,3 +1,19 @@
 .u-hidden {
-  display: none !important;
+  display: none;
+}
+.u-hidden-pc {
+  display: none;
+}
+.u-hidden-sp {
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .u-hidden-pc {
+    display: block;
+  }
+  .u-hidden-sp {
+    display: none;
+  }
 }

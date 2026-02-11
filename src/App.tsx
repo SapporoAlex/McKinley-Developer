@@ -1,6 +1,4 @@
 import './assets/Reset.scss';
-import './assets/_variables.scss';
-import './assets/_utilities.scss';
 import './assets/NavBar.scss';
 import './assets/Lottie.scss';
 import './App.css';
@@ -10,6 +8,7 @@ import KV from './components/KV';
 import GridTools from './components/GridTools';
 import GridWorks from './components/GridWorks';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 const App: React.FC = () => {
@@ -25,6 +24,7 @@ const App: React.FC = () => {
           <Contact />
 
       </main>
+      <Footer />
     </div>
   );
 };

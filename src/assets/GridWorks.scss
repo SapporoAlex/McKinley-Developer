@@ -1,58 +1,50 @@
 @use 'variables';
 
 .works-section {
+  position: relative;
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 60px 0px;
-  background-color: variables.$color-primary;
+  padding: 80px 0px 120px 0;
+  background-image: variables.$color-primary-gradient;
+    overflow-x: hidden;
+}
+
+.bg-wrapper {
+  position:absolute;
+  z-index: 1;
+  opacity: 0.1;
+  background-image: url("/bg_image.png");
+  background-repeat: repeat;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  filter: blur(1px);
 }
 
 .grid-works {
+  z-index: 2;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  gap: 100px;
 }
 
 .work-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: auto;
-  background-color: variables.$color-secondary;
-  padding: 10px 15px;
-  border-radius: 8px;
-  border: 1px solid variables.$color-accent-border;
-  box-shadow: 1px 1px 8px variables.$color-accent-border;
-  transition: transform 0.3s, box-shadow 0.3s;
-  &__image-frame {
-    display: flex;
-    width: 90%;
-    height: auto;
-  }
-  &__image {
-    width: 100%;
-  }
-  &__description {
-    text-align: left;
-  }
-  &__lower {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
+  min-width: 0;
 }
 
-.work-card:hover {
-  box-shadow: 0 0 30px variables.$color-accent-border;
-  border: 1px solid variables.$color-accent-border;
+@media (max-width: 768px) {
+  .grid-works {
+      margin-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+  }
 }

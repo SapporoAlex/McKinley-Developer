@@ -1,0 +1,152 @@
+@use '../assets/variables';
+
+.copy-btn {
+    border: 1px solid variables.$color-accent-border;
+    background: variables.$color-secondary;
+    border-radius: 5px;
+    padding: 2px 2px 0 2px;
+    margin-left: 10px;
+}
+
+.copy-btn-copied {
+    line-height: 1rem;
+    margin: 0;
+
+}
+
+.copy-btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.fade-frame--tl {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+    to bottom right,
+    rgb(1, 56, 124) 0%,
+    rgba(0, 102, 255, 0) 50%
+    );
+    
+}
+
+.fade-frame--tr {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(
+    to bottom left,
+    rgba(0, 48, 107) 0%,
+    rgba(0, 102, 255, 0) 50%
+    );
+    
+}
+.fade-frame--r {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+    to left,
+    rgba(0, 48, 107) 0%,
+    rgba(0, 102, 255, 0) 40%
+    );
+    
+}
+.fade-frame--bl {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+    to top right,
+    rgb(1, 56, 124) 0%,
+    rgba(0, 102, 255, 0) 30%
+    );
+    
+}
+.fade-frame--br {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+    to top left,
+    rgba(0, 43, 96) 0%,
+    rgba(0, 102, 255, 0) 50%
+    );
+    
+}
+
+
+.fade-frame--tl-dark {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 102, 255, 0) 20%
+    );
+    
+}
+
+.fade-frame--tr-dark {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 700px;
+    width: 100%;
+    background: linear-gradient(
+    to bottom left,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 102, 255, 0) 20%
+    );
+    
+}
+.fade-frame--bl-dark {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+    to top right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 102, 255, 0) 20%
+    );
+    
+}
+.fade-frame--br-dark {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+    to top left,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 102, 255, 0) 20%
+    );
+    
+}
+

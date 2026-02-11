@@ -1,56 +1,62 @@
 [
   {
     "id": "1",
-    "img": "/works/work-xcorp.webp",
-    "alt": "corporate site",
-    "title": "Corporate Site",
-    "desc": "Modern responsive design with animations, videos and images to reflect a professional Mock-up corporate site. features multi-lingual support, LinkedIn Feed, Article Sections, Staff introduction and Contact Area.",
-    "tools": "React, TypeScript",
-    "link": "./"
+    "img": "/works/xcorp.webp",
+    "poster": "/works/xcorp.webp",
+    "videoWebm": "/works/xcorp.webm",
+    "videoMp4": "/works/xcorp.mp4",
+    "i18nKey": "works.xcorp",
+    "tools": ["React", "TypeScript"],
+    "link": "https://sapporoalex.github.io/xCorp/"
   },
   {
     "id": "2",
-    "img": "/works/work-blog.webp",
-    "alt": "gamer blog site",
-    "title": "Gamer Blog Site",
-    "desc": "Gamer-Oriented blog site with fun and responsive design. Features article pages, store and social media links.",
-    "tools": "HTML5, CSS, JavaScript, EJS",
-    "link": "./"
+    "img": "/works/gamerblog.webp",
+    "poster": "/works/gamerblog.webp",
+    "videoWebm": "/works/gamerblog.webm",
+    "videoMp4": "/works/gamerblog.mp4",
+    "i18nKey": "works.gamerblog",
+    "tools": ["HTML5", "CSS", "JavaScript", "EJS"],
+    "link": "https://sapporoalex.github.io/MM-blog-site/index.html"
   },
   {
     "id": "3",
-    "img": "/works/work-artist.webp",
-    "alt": "visual artist portfolio landing page",
-    "title": "Visual Artist Landing Page",
-    "desc": "Responsive landing page with minimalist design displaying a selection of the artist's work by gallery, with links to social media. This LP is accesed by QR code on the artist's business card, with the goal of allowing potential clients to preview her work.",
-    "tools": "React, CSS, TypeScript, Python",
-    "link": "./"
+    "img": "/works/artist.webp",
+    "poster": "/works/artist.webp",
+    "videoWebm": "/works/artist.webm",
+    "videoMp4": "/works/artist.mp4",
+    "i18nKey": "works.artistPortfolio",
+    "tools": ["React", "CSS", "TypeScript", "Python"],
+    "link": "https://sapporoalex.github.io/Dagny-Portfolio/"
   },
   {
     "id": "4",
-    "img": "/works/work-hamster.webp",
-    "alt": "gaming site",
-    "title": "Gaming Site",
-    "desc": "Gaming site with personally built playable games made in TypeScript. The site features sign-up for users to track their scores, and a responsive design allowing games to be played across devices.",
-    "tools": "Django, HTML5, CSS, JavaScript, TypeScript, SQLite",
-    "link": "./"
+    "img": "/works/hgames.webp",
+    "poster": "/works/hgames.webp",
+    "videoWebm": "/works/hgames.webm",
+    "videoMp4": "/works/hgames.mp4",
+    "i18nKey": "works.gamingSite",
+    "tools": ["Django", "HTML5", "CSS", "JavaScript", "TypeScript", "SQLite"],
+    "link": "https://hamster-games.onrender.com/"
   },
   {
     "id": "5",
-    "img": "/works/work-harry.webp",
-    "alt": "fast-food mobile site",
-    "title": "Fast-Food Mobile Site",
-    "desc": "Fictional fast-food restaurant mock-up mobile-first site, clean minimalist design with menu items and deals displayed in an easy to navigate layout. Features recruitment page and dynamic shopping cart.",
-    "tools": "HTML5, CSS, JavaScript",
-    "link": "./"
+    "img": "/works/hh.webp",
+    "poster": "/works/hh.webp",
+    "videoWebm": "/works/hh.webm",
+    "videoMp4": "/works/hh.mp4",
+    "i18nKey": "works.happyHarry",
+    "tools": ["HTML5", "CSS", "JavaScript"],
+    "link": "https://sapporoalex.github.io/Happy-Harry-s-Restaurant-App/index.html"
   },
   {
     "id": "6",
-    "img": "/works/work-devtools.webp",
-    "alt": "developer tools site",
-    "title": "Developer Tools Site",
-    "desc": "A site for developers with 8 personally built tools such as a URL debugger, dummy image creator, and Word to HTML builder. React frontend with a Python and Node.JS backend.",
-    "tools": "React, TypeScript, Node.JS, Python",
-    "link": "./"
+    "img": "/works/oztools.webp",
+    "poster": "/works/oztools.webp",
+    "videoWebm": "/works/oztools.webm",
+    "videoMp4": "/works/oztools.mp4",
+    "i18nKey": "works.OzTools",
+    "tools": ["React", "TypeScript", "Node.JS", "Python"],
+    "link": "https://oztoolsreactfrontend.onrender.com/"
   }
 ]

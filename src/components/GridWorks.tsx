@@ -8,19 +8,20 @@ const GridWorks: React.FC = () => {
     const {t} = useTranslation();
     return (
         <section id="works" className="works-section">
+            <div className="bg-wrapper"></div>
             <div className="main-container">
-            <h2>{t('works.title')}</h2>
+            <h1 lang="en">Works</h1>
             <div className="grid-works">
             {worksData.map((work: any) => (
-              <WorkCard 
-                key={work.id}
-                img={work.img} 
-                alt={work.alt} 
-                title={work.title}
-                desc={work.desc} 
-                link={work.link} 
-                tools={work.tools}
-            />
+                <WorkCard
+                    key={work.id}
+                    img={work.poster}
+                    videoWebm={work.videoWebm}
+                    videoMp4={work.videoMp4}
+                    i18nKey={work.i18nKey}
+                    link={work.link}
+                    tools={work.tools}
+                />
             ))}
             </div>
             </div>

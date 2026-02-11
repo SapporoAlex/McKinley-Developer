@@ -1,32 +1,47 @@
 import React from 'react';
 import Button from './Button';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 import '../assets/GridWorks.scss';
+import '../assets/WorkCard.scss';
+import Tag from './Tag';
+import SitePreviewVideo from "./SitePreviewVideo";
+
 
 interface WorkCardProps {
-    img: string,
-    alt: string,
-    title: string,
-    desc: string,
-    link: string,
-    tools: string,
+    img: string;
+    videoWebm: string;
+    videoMp4: string;
+    i18nKey: string;
+    link: string;
+    tools: string[];
 }
 
-const WorkCard: React.FC<WorkCardProps> = ({ img, alt, title, desc, link, tools }) => {
+const WorkCard: React.FC<WorkCardProps> = ({ img, videoWebm, videoMp4, i18nKey, link, tools }) => {
     const {t} = useTranslation();
+    const title = t(`${i18nKey}.title`);
+    const desc = t(`${i18nKey}.desc`);
     return (
         <>
-        <div className="work-card">
-            <h3>{title}</h3>
-            <div className="work-card__image-frame">
-                <img className="work-card__image" src={img} alt={alt} />
-            </div>
-            <p className="work-card__description">{desc}</p>
-            <div className="work-card__lower">
-                <p>Tools: {tools}</p>
-                <Button text={t('works.link_btn')} buttonLink={link} external />
-            </div>
-        </div>
+            <a href={link} target='_blank'>
+                <div className="work-card">
+                    <div className="work-card__image-frame">
+                        <SitePreviewVideo
+                            webm={videoWebm}
+                            mp4={videoMp4}
+                            poster={img}
+                        />
+                    </div>
+                    <div className='work-card__lower'>
+                        <div className="work-card__tool-list">
+                            {tools.map((tool, index) => (
+                                <Tag key={index} text={tool} />
+                            ))}
+                        </div>
+                        <h2 className="work-card__title">{title}</h2>
+                        <p className="work-card__description">{desc}</p>
+                    </div>
+                </div>
+            </a>
         </>
     );
 };

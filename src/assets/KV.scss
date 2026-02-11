@@ -1,17 +1,142 @@
 @use 'variables';
 
 .top {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   gap: 20px;
-  padding: 60px 20px;
-  background-color: variables.$color-primary;
+  padding: 0px 20px;
+  background-color: variables.$color-primary-gradient;
   width: 100%;
-  height: 60dvh;
+  height: 800px;
 }
 
 #top {
   scroll-margin-top: none;
 }
 
+.kv-image-frame {
+  position: absolute;
+  top: 0;
+  bottom:0;
+  right: 50%;
+  height: auto;
+  max-height: 800px;
+  width: 50vw;
+  overflow: hidden;
+}
+.kv-image-frame-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+    max-height: 800px;
+      max-width: 800px;
+}
+
+.kv-image {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  max-height: 800px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.pair-a {
+  position: absolute;
+  top:0;
+  right:50%;
+  height: 100%;
+  max-height: 800px;
+  width: auto;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.pair-b {
+  position: absolute;
+  z-index: 12;
+  left: 45%;
+  top: 30%;
+  width: 50%;
+  max-width: 600px;
+  margin-right: auto;
+  border: 1px solid variables.$color-accent-border;
+  background: variables.$color-secondary;
+  color: variables.$color-text;
+  padding: 20px 25px;
+  &__cta {
+    color: variables.$color-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .title:after {
+        width: 100%;
+        content: "";
+        display: flex;
+        background-image: variables.$color-primary-gradient;
+        height: 4px;
+        border-radius: 4px;
+        margin-top: -4px;    
+  }
+}
+
+@media (max-width: 768px) {
+  .top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0px 20px;
+    background-color: variables.$color-primary-gradient;
+    width: 100%;
+    height: 700px;
+  }
+  .kv-image-frame {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 60vh;
+    max-height: 500px;
+    overflow: hidden;
+  }
+
+  .kv-image-frame-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .kv-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .pair-b {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 90%;
+    max-width: 90%;
+    margin-right: auto;
+      &__cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+  }
+}

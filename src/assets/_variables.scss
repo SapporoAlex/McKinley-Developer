@@ -1,26 +1,15 @@
-// sunset bay pretty good
-// $color-background: #FDF8F5;   // soft warm white
-// $color-primary:    #7DD3CF;   // turquoise
-// $color-secondary:  #F1D2B6;   // warm sand beige
-// $color-accent:     #D77A61;   // muted coral-orange accent
-// $color-accent-border: #D77A6170;
-// $color-text:       #2B2B2B;
 
-// Tech modern kind cool
-// $color-background: #1E1E2F;   // dark slate
-// $color-primary:    #4A90E2;   // same tech-blue for consistency
-// $color-primary:    #00336d;   
-// $color-secondary:  #2C3E50;   // slightly lighter dark panel
-// $color-accent:     #1ABC9C;   // same teal highlight
-// $color-accent:     #08f5c5;
-// $color-text:       #E5E5E5;   // soft off-white text
-// $color-accent-border:#95A5A6;   // muted secondary text
-// $color-accent-border:#b1faff;
+$color-background: #000000;
+$color-primary:    rgb(0, 14, 31);
+$color-primary-gradient: linear-gradient(
+  135deg,
+    rgb(1, 56, 124),
+  #000e1f
 
-// mine
-$color-background: #000000;   // dark slate
-$color-primary:    #000e1f;   // same tech-blue for consistency
-$color-secondary:  #606c77;   // slightly lighter dark panel
-$color-accent:     #2cd0ec;   // same teal highlight
-$color-text:       #f5f5f5;   // soft off-white text
-$color-accent-border:#47f3ff;   // muted secondary text
+);
+$color-secondary:  #525a61;
+$color-accent:     #2cd0ec;
+$color-cta:     #f5f109;
+$color-text:       #f5f5f5;
+$color-text-dark: #b6b6b6;
+$color-accent-border:#47f3ff;

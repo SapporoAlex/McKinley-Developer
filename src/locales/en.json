@@ -1,24 +1,60 @@
 {
     "header": {
-        "top": "top",
-        "tools": "tools",
-        "works": "works",
-        "contact": "contact"
+        "top": "Top",
+        "tools": "Toolbox",
+        "works": "Works",
+        "contact": "Contact"
     },
     "top": {
-        "title": "title",
-        "text": "text",
-        "button": "button"
+        "title": "Alex McKinley",
+        "title-position": "Frontend Engineer",
+        "text": "Welcome to my portfolio. I've worked as a professional frontend engineer since 2025. I build and maintain websites for corporations, small-businesses and individuals, utilising the latest tools",
+        "button": "See Works"
     },
     "tools": {
-        "title": "title"
-    },
-    "works": {
-        "title": "title",
-        "link_btn": "View Site"
+        "title": "Toolbox"
     },
     "contact": {
-        "title": "title",
-        "text": "contact text"
+        "title": "Contact",
+        "text": "Reach out to me by my email for collaboration, consultation or general inquiries."
+    },
+    
+    "works": {
+        "xcorp": {
+            "title": "Corporate Site",
+            "desc": "Modern responsive design with animations, videos and images to reflect a professional mock-up corporate site. Features multi-lingual support, LinkedIn feed, article sections, staff introductions, and contact area.",
+            "alt": "corporate website preview"
+        },
+
+        "gamerblog": {
+            "title": "Gamer Blog Site",
+            "desc": "Gamer-oriented blog site with fun and responsive design. Features article pages, store and social links.",
+            "alt": "gamer blog website preview"
+        },
+
+        "artistPortfolio": {
+            "title": "Visual Artist Landing Page",
+            "desc": "Responsive landing page with minimalist design displaying a selection of the artist's work by gallery, with links to social media. This LP is accesed by QR code on the artist's business card, with the goal of allowing potential clients to preview her work.",
+            "alt": "visual artist portfolio landing page"
+        },
+
+        "gamingSite": {
+            "title": "Gaming Site",
+            "desc": "Gaming site with personally built playable games made in TypeScript. The site features sign-up for users to track their scores, and a responsive design allowing games to be played across devices.",
+            "alt": "gaming site"
+        },
+
+        "happyHarry": {
+            "title": "Fast-Food Mobile Site",
+            "desc": "Fictional fast-food restaurant mock-up mobile-first site, clean minimalist design with menu items and deals displayed in an easy to navigate layout. Features recruitment page and dynamic shopping cart.",
+            "alt": "fast-food mobile site"
+        },
+
+        "OzTools": {
+            "title": "Developer Tools Site",
+            "desc": "A site for developers with 8 personally built tools such as a URL debugger, dummy image creator, and Word to HTML builder. React frontend with a Python and Node.JS backend.",
+            "alt": "developer tools site"
+        }
     }
+
 }
