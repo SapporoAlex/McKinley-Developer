@@ -57,7 +57,7 @@ const Contact: React.FC = () => {
                             <div className="fade-frame--tr-dark"></div>
                             <div className="fade-frame--bl-dark"></div>
                             <div className="fade-frame--br-dark"></div>
-                            <img className="contact-image" src="/profile_2.png" />
+                            <img className="contact-image" src="/profile_2.webp" />
                         </div>
                     </div>
                 </div>
