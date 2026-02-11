@@ -49,6 +49,7 @@ const Contact: React.FC = () => {
                                     </svg>
                                 )}
                             </button>
+                            <img className="contact-image" src={`${import.meta.env.BASE_URL}profile_2.webp`} alt="profile" />
                         </p>
                     </div>
                     <div className="contact-image-frame">
@@ -57,7 +58,7 @@ const Contact: React.FC = () => {
                             <div className="fade-frame--tr-dark"></div>
                             <div className="fade-frame--bl-dark"></div>
                             <div className="fade-frame--br-dark"></div>
-                            <img className="contact-image" src="/profile_2.webp" />
+                            <img className="contact-image" src={`${import.meta.env.BASE_URL}profile_2.webp`} alt="profile" />
                         </div>
                     </div>
                 </div>

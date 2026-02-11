@@ -19,7 +19,7 @@ const KV: React.FC = () => {
                             <div className="fade-frame--r"></div>
                             <div className="fade-frame--bl"></div>
                             <div className="fade-frame--br"></div>
-                            <img className="kv-image" src="/profile_1.webp" />
+                            <img className="kv-image" src={`${import.meta.env.BASE_URL}profile_1.webp`} alt="profile" />
                         </div>
                     </div>
                     <div className="pair-b">
