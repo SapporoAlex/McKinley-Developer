@@ -1,9 +1,8 @@
 import React from 'react';
 import '../assets/GridTools.scss';
-import { useTranslation } from 'react-i18next'
+
 
 const GridTools: React.FC = () => {
-    const {t} = useTranslation();
     
     const tools = [
         { id: '1', img: '/html.png', alt: 'HTML5' },

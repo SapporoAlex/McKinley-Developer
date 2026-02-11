@@ -2,10 +2,10 @@ import React from 'react';
 import worksData from '../data/works.json';
 import WorkCard from './WorkCard';
 import '../assets/GridWorks.scss';
-import { useTranslation } from 'react-i18next'
+
 
 const GridWorks: React.FC = () => {
-    const {t} = useTranslation();
+
     return (
         <section id="works" className="works-section">
             <div className="bg-wrapper"></div>

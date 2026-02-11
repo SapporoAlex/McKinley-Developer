@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './Button';
 import { useTranslation } from 'react-i18next';
 import '../assets/GridWorks.scss';
 import '../assets/WorkCard.scss';
