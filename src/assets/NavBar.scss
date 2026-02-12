@@ -17,7 +17,7 @@
 }
 
 .navbar {
-  background: variables.$color-secondary;
+  background: variables.$color-secondary-glass;
   border-radius: 20px;
   border: 1px solid variables.$color-accent-border;
   max-width: 1200px;
@@ -28,8 +28,6 @@
   flex-direction: row;
   margin-inline: 20px;
   padding: 5px;
-  font-size: 26px;
-
   .header-inner {
     display: flex;
     justify-content: space-between;
@@ -49,7 +47,6 @@
       }
     }
     .nav-right {
-      font-size: 14px;
       display: flex;
       flex-direction: row;
       gap: 10px;
@@ -121,7 +118,7 @@
     display: flex;
     flex-direction: column;
     padding-right: 1rem;
-    background-color: variables.$color-secondary;
+    background-color: variables.$color-secondary-glass;
     box-shadow: 0 5px 15px variables.$color-accent-border;
     border-radius: 20px;
     border: 1px solid variables.$color-accent-border;
@@ -135,7 +132,6 @@
       text-decoration: none;
       color: variables.$color-text;
       font-weight: 500;
-      font-size: 14px;
     }
   }
   .mobile-menu.s-right-in {
