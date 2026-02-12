@@ -49,7 +49,6 @@ const Contact: React.FC = () => {
                                     </svg>
                                 )}
                             </button>
-                            <img className="contact-image" src={`${import.meta.env.BASE_URL}profile_2.webp`} alt="profile" />
                         </p>
                     </div>
                     <div className="contact-image-frame">

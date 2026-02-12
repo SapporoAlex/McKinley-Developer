@@ -5,12 +5,12 @@ import '../assets/GridTools.scss';
 const GridTools: React.FC = () => {
     
     const tools = [
-        { id: '1', img: '/html.png', alt: 'HTML5' },
-        { id: '2', img: '/css.png', alt: 'CSS3' },
-        { id: '3', img: '/ts.png', alt: 'TypeScript' },
-        { id: '4', img: '/react.png', alt: 'React' },
-        { id: '5', img: '/vue.png', alt: 'Vue' },
-        { id: '6', img: '/astro.png', alt: 'Astro' },
+        { id: '1', img: `${import.meta.env.BASE_URL}html.png`, alt: 'HTML5' },
+        { id: '2', img: `${import.meta.env.BASE_URL}css.png`, alt: 'CSS3' },
+        { id: '3', img: `${import.meta.env.BASE_URL}ts.png`, alt: 'TypeScript' },
+        { id: '4', img: `${import.meta.env.BASE_URL}react.png`, alt: 'React' },
+        { id: '5', img: `${import.meta.env.BASE_URL}vue.png`, alt: 'Vue' },
+        { id: '6', img: `${import.meta.env.BASE_URL}astro.png`, alt: 'Astro' },
         // { id: '7', img: '/django.png', alt: 'Django' },
     ];
     
