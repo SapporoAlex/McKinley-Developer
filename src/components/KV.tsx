@@ -23,7 +23,7 @@ const KV: React.FC = () => {
                         </div>
                     </div>
                     <div className="pair-b">
-                        <h1 className="title">{t('top.title')}<br/><span lang="en">{t('top.title-position')}</span></h1>
+                        <h1 className="title">{t('top.title')}<span lang="en">{t('top.title-position')}</span></h1>
                         <p>{t('top.text')}</p>
                         <div className="pair-b__cta">
                             <Button buttonLink="#works" text={t('top.button')} />
