@@ -8,6 +8,15 @@
     margin-left: 10px;
 }
 
+.title:after {
+    width: 100%;
+    content: "";
+    display: flex;
+    background-image: variables.$color-secondary-gradient;
+    height: 4px;
+    border-radius: 4px;
+}
+
 .copy-btn-copied {
     line-height: 1rem;
     margin: 0;
@@ -28,7 +37,7 @@
     width: 100%;
     background: linear-gradient(
     to bottom right,
-    rgb(0, 31, 97) 0%,
+    rgb(6, 16, 37) 0%,
     rgba(0, 31, 97, 0) 20%
     );
     
@@ -43,7 +52,7 @@
     width: 100%;
     background: linear-gradient(
     to bottom left,
-    rgb(0, 31, 97) 0%,
+    rgb(6, 16, 37) 0%,
     rgba(0, 31, 97, 0) 20%
     );
     
@@ -57,8 +66,8 @@
     width: 100%;
     background: linear-gradient(
     to left,
-    rgb(0, 31, 97) 0%,
-    rgba(0, 31, 97, 0) 20%
+    rgb(3, 10, 24) 0%,
+    rgba(0, 31, 97, 0) 30%
     );
     
 }
@@ -71,7 +80,7 @@
     width: 100%;
     background: linear-gradient(
     to top right,
-    rgb(0, 31, 97) 0%,
+    rgb(6, 16, 37) 0%,
     rgba(0, 31, 97, 0) 20%
     );
     
@@ -85,7 +94,7 @@
     width: 100%;
     background: linear-gradient(
     to top left,
-    rgb(0, 31, 97) 0%,
+    rgb(6, 16, 37) 0%,
     rgba(0, 102, 255, 0) 20%
     );
     
@@ -102,7 +111,7 @@
     background: linear-gradient(
     to bottom right,
     rgb(0, 0, 0) 0%,
-    rgba(0, 102, 255, 0) 20%
+    rgba(0, 102, 255, 0) 10%
     );
     
 }
@@ -117,7 +126,7 @@
     background: linear-gradient(
     to bottom left,
     rgb(0, 0, 0) 0%,
-    rgba(0, 102, 255, 0) 20%
+    rgba(0, 102, 255, 0) 10%
     );
     
 }
@@ -131,7 +140,7 @@
     background: linear-gradient(
     to top right,
     rgb(0, 0, 0) 0%,
-    rgba(0, 102, 255, 0) 20%
+    rgba(0, 102, 255, 0) 10%
     );
     
 }
@@ -145,8 +154,24 @@
     background: linear-gradient(
     to top left,
     rgb(0, 0, 0) 0%,
-    rgba(0, 102, 255, 0) 20%
+    rgba(0, 35, 88, 0) 10%
     );
     
+}
+
+@media (max-width: 768px) {
+    .fade-frame--r {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+        to top,
+        rgb(3, 10, 24) 0%,
+        rgba(0, 31, 97, 0) 50%
+        );
+    }
 }
 

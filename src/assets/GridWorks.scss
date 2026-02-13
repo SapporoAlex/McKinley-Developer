@@ -8,7 +8,7 @@
   flex-direction: column;
   padding: 120px 0px 160px 0;
   background-image: variables.$color-primary-gradient;
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 .bg-wrapper {
@@ -27,10 +27,10 @@
   z-index: 2;
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 40px;
 }
 
 .work-card {
@@ -44,6 +44,6 @@
       grid-template-columns: 1fr;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 80px;
+      gap: 20px;
   }
 }

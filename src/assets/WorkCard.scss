@@ -1,5 +1,16 @@
 @use 'variables';
 
+@keyframes fadeInFloatUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .work-card {
     display: flex;
     flex-direction: column;
@@ -14,7 +25,12 @@
     border-radius: 15px;
     border: 1px solid variables.$color-accent-border;
     box-shadow: 1px 1px 8px variables.$color-accent-border;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.6s, box-shadow 0.3s;
+    opacity: 0;
+    
+    &--visible {
+        animation: fadeInFloatUp 0.6s ease-out forwards;
+    }
     &__image-frame {
         display: flex;
         width: 100%;
@@ -31,7 +47,7 @@
         width: 100%;
         content: "";
         display: flex;
-        background-image: variables.$color-primary-gradient;
+        background-image: variables.$color-secondary-gradient;
         height: 4px;
         border-radius: 4px;
     }
@@ -39,12 +55,17 @@
         text-align: left;
     }
     &__lower {
-        display: block;
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 15px 20px;
+        padding: 20px 25px;
         width: 100%;
-        min-height: 200px;
+        min-height: 260px;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        height: auto;
     }
     &__tool-list {
         display: flex;
@@ -78,11 +99,11 @@
             text-align: left;
         }
         &__lower {
-            display: block;
+            display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 10px 12px;
-            min-height: auto;
+            padding: 0 25px 20px 25px;
+            min-height: 220px;
             height: auto;
         }
         &__tool-list {

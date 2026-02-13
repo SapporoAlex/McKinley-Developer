@@ -10,9 +10,10 @@ const Contact: React.FC = () => {
 
         <section id="contact" className="contact-section">
             <div className="main-container">
+                                    <h1 className="title" lang="en">Contact</h1>
                 <div className="contact-wrapper">
+
                     <div className="contact-text-area">
-                        <h1 lang="en">Contact</h1>
                         <p>{t('contact.text')}</p>
                         <p className="contact-email-row">
                             <span className="contact-email">alexanderfromaustralia@gmail.com</span>

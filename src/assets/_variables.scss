@@ -3,15 +3,19 @@ $color-background: #000000;
 $color-primary:    rgb(0, 14, 31);
 $color-primary-gradient: linear-gradient(
   135deg,
-    rgb(0, 31, 97),
-  #000e4b
-
+    rgb(7, 12, 24),
+  #000416
 );
-$color-secondary:  #2c333a;
-$color-secondary-glass:#3c49559f;
+$color-secondary-gradient: linear-gradient(
+  135deg,
+    #ffffff,
+  #2cd0ec
+);
+$color-secondary:  #000630;
+$color-secondary-glass:#3c4955bb;
 $color-accent:     #2cd0ec;
 $color-cta:     #f5f109;
-$color-text:       #f5f5f5;
+$color-text:       #ffffff;
 $color-text-dark: #b6b6b6;
 
 $color-accent-border:#47f3ff;

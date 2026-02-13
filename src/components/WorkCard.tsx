@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../assets/GridWorks.scss';
 import '../assets/WorkCard.scss';
@@ -19,10 +19,35 @@ const WorkCard: React.FC<WorkCardProps> = ({ img, videoWebm, videoMp4, i18nKey, 
     const {t} = useTranslation();
     const title = t(`${i18nKey}.title`);
     const desc = t(`${i18nKey}.desc`);
+    const cardRef = useRef<HTMLDivElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        if (cardRef.current) {
+            observer.observe(cardRef.current);
+        }
+
+        return () => {
+            if (cardRef.current) {
+                observer.unobserve(cardRef.current);
+            }
+        };
+    }, []);
+
     return (
         <>
             <a href={link} target='_blank'>
-                <div className="work-card">
+                <div className={`work-card ${isVisible ? 'work-card--visible' : ''}`} ref={cardRef}>
                     <div className="work-card__image-frame">
                         <SitePreviewVideo
                             webm={videoWebm}
@@ -31,13 +56,15 @@ const WorkCard: React.FC<WorkCardProps> = ({ img, videoWebm, videoMp4, i18nKey, 
                         />
                     </div>
                     <div className='work-card__lower'>
+                        <div className='work-card__text'>
+                            <h2 className="work-card__title">{title}</h2>
+                            <p className="work-card__description">{desc}</p>
+                        </div>
                         <div className="work-card__tool-list">
                             {tools.map((tool, index) => (
                                 <Tag key={index} text={tool} />
                             ))}
                         </div>
-                        <h2 className="work-card__title">{title}</h2>
-                        <p className="work-card__description">{desc}</p>
                     </div>
                 </div>
             </a>

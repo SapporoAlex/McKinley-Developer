@@ -17,7 +17,7 @@ const GridTools: React.FC = () => {
     return (
         <section id="tools" className="tools-section">
             <div className="main-container">
-                <h1 lang="en">Toolbox</h1>
+                <h1 className="title" lang="en">Toolbox</h1>
                 <div className="grid-tools">
                     {tools.map((tool) => (
                         <div key={tool.id} className="tool-card">
