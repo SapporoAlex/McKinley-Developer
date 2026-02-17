@@ -11,27 +11,14 @@ const KV: React.FC = () => {
     return (
         <section id="top" className="top">
             <div className="container-section">
-                <div className="bg-wrapper" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg_image.webp)` }}></div>
-                <div className="pair-box">     
-                    <div className="kv-image-frame">
-                        <div className="kv-image-frame-inner">
-                            {/* <div className="fade-frame--tl"></div>
-                            <div className="fade-frame--tr"></div> */}
-                            <div className="fade-frame--r"></div>
-                            {/* <div className="fade-frame--bl"></div>
-                            <div className="fade-frame--br"></div> */}
-                            <img className="kv-image" src={`${import.meta.env.BASE_URL}profile_1.webp`} alt="profile" />
-                        </div>
-                    </div>
-                    <div className="pair-b">
-                        <h1 className="title">{t('top.title')}<span lang="en">{t('top.title-position')}</span></h1>
+                <div className="pair-box">    
+                    <h1 className="title">{t('top.title')}<span lang="en">{t('top.title-position')}</span></h1>
                         <p>{t('top.text')}</p>
                         <div className="pair-b__cta">
                             <Button buttonLink="#works" text={t('top.button')} />
-                        </div>
-                    </div>
-
+                        </div> 
                 </div>
+                <div className="bg-wrapper" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg_image.webp)` }}></div>
             </div>
         </section>
     )
