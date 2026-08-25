@@ -1,4 +1,4 @@
-@use 'variables';
+@use "variables";
 
 .works-section {
   position: relative;
@@ -12,12 +12,12 @@
 }
 
 .bg-wrapper {
-  position:absolute;
+  position: absolute;
   z-index: 1;
   opacity: 0.1;
   background-repeat: repeat;
   top: 0;
-  left:0;
+  left: 0;
   height: 100%;
   width: 100%;
   filter: blur(1px);
@@ -39,11 +39,11 @@
 
 @media (max-width: 768px) {
   .grid-works {
-      margin-top: 40px;
-      display: grid;
-      grid-template-columns: 1fr;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
   }
 }

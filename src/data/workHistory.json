@@ -1,5 +1,14 @@
 [
-  { "year": "2024", "text": "Add a short description of where or what you worked on." },
-  { "year": "2022", "text": "Add a short description of where or what you worked on." },
-  { "year": "2020", "text": "Add a short description of where or what you worked on." }
+  {
+    "year": "2025.4",
+    "text": "Oz Creative, Sapporo Hokkaido: full-time frontend developer, project director"
+  },
+  {
+    "year": "2024.7",
+    "text": "Freelance: frontend developer"
+  },
+  {
+    "year": "2023.7",
+    "text": "Value-Build, (remote): freelance automation, and data scientist"
+  }
 ]
