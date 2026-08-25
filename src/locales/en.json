@@ -14,12 +14,23 @@
     "tools": {
         "title": "Toolbox"
     },
+    "workHistory": {
+        "title": "Work History"
+    },
     "contact": {
         "title": "Contact",
-        "text": "Reach out to me by my email for collaboration, consultation or general inquiries."
+        "text": "Reach out to me by my email for collaboration, consultation or general inquiries.",
+        "emailButton": "Send an Email",
+        "copy": "Copy email",
+        "copied": "Copied!"
     },
     
     "works": {
+        "seishinkaiKarate": {
+            "title": "Seishinkai Karate",
+            "desc": "I personally reached out to this client and redesigned and rebuilt their 30 year old website. I improved SEO, customer join up rate, and user accessibilty",
+            "alt": "Seishinkai"
+        },
         "xcorp": {
             "title": "Corporate Site",
             "desc": "Modern professional corporate site.",
@@ -54,6 +65,24 @@
             "title": "Dev Tools Site",
             "desc": "Site with 8 built-in tools in Node.js and python for developers",
             "alt": "developer tools site"
+        },
+
+        "gyoren": {
+            "title": "Gyoren Fisheries Hokkaido",
+            "desc": "An interactive digital fish encyclopedia for Hokkaido's fisheries federation, sharing bite-sized stories about local seafood. I was head developer, making the key functionality and tech stack decisions.",
+            "alt": "Gyoren Hokkaido fish encyclopedia preview"
+        },
+
+        "mebs": {
+            "title": "MEBS Kids Tablet App",
+            "desc": "A tablet-first educational experience for Mitsubishi Electric Building Solutions, teaching kids how elevators and escalators work. I directed and developed the project, working between the Japanese designers/client and a Malaysian development team.",
+            "alt": "MEBS kids elevator and escalator exploration app preview"
+        },
+
+        "marugame": {
+            "title": "Marugame Seimen Summer Campaign",
+            "desc": "A seasonal summer campaign landing page for Marugame Seimen, the udon restaurant chain. I worked as developer, building the page with Gulp against their CMS.",
+            "alt": "Marugame Seimen summer campaign landing page preview"
         }
     }
 

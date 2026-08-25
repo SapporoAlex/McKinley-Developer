@@ -5,6 +5,7 @@ import './App.css';
 import React from 'react';
 import Navbar from './components/Navbar';
 import KV from './components/KV';
+import WorkHistory from './components/WorkHistory';
 import GridTools from './components/GridTools';
 import GridWorks from './components/GridWorks';
 import Contact from './components/Contact';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
       <main>
 
           <KV />
+          <WorkHistory />
           <GridTools />
           <GridWorks />
           <Contact />

@@ -1,14 +1,15 @@
 import React from 'react';
 import '../assets/Tag.scss';
 
-interface WorkCardProps {
+interface TagProps {
     text: string,
+    variant?: 'tool' | 'role',
 }
 
-const Tag: React.FC<WorkCardProps> = ({ text }) => {
+const Tag: React.FC<TagProps> = ({ text, variant = 'tool' }) => {
     return (
         <>
-        <div className="tag">
+        <div className={`tag tag--${variant}`}>
             <p className="tag-text">{text}</p>
         </div>
         </>

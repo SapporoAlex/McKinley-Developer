@@ -1,0 +1,88 @@
+@use 'variables';
+
+.work-history-section {
+  padding: 120px 0px 120px 0;
+  background-color: variables.$color-background;
+}
+
+.work-history-timeline {
+  position: relative;
+  list-style: none;
+  margin: 50px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 85px;
+    width: 1px;
+    background: variables.$color-accent-border;
+    opacity: 0.35;
+  }
+}
+
+.work-history-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  column-gap: 30px;
+  align-items: start;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 85px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: variables.$color-accent-border;
+    box-shadow: 0 0 8px variables.$color-accent-border;
+    transform: translate(-50%, 0);
+  }
+
+  &__year {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: variables.$color-accent-border;
+    text-align: right;
+  }
+
+  &__text {
+    margin: 0;
+    color: variables.$color-text;
+    line-height: 1.7;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-history-timeline {
+    gap: 24px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .work-history-entry {
+    grid-template-columns: 1fr;
+    row-gap: 6px;
+
+    &:before {
+      display: none;
+    }
+
+    &__year {
+      text-align: left;
+      font-size: 14px;
+      letter-spacing: 0.05rem;
+    }
+  }
+}

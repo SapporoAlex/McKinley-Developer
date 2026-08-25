@@ -1,62 +1,90 @@
 [
   {
     "id": "1",
-    "img": "works/xcorp.webp",
-    "poster": "works/xcorp.webp",
-    "videoWebm": "works/xcorp.webm",
-    "videoMp4": "works/xcorp.mp4",
-    "i18nKey": "works.xcorp",
-    "tools": ["React", "TypeScript"],
-    "link": "https://sapporoalex.github.io/xCorp/"
+    "poster": "works/seishinkai.webp",
+    "i18nKey": "works.seishinkaiKarate",
+    "date": "2026.6",
+    "roles": ["Director", "Designer", "Developer"],
+    "tools": ["Astro", "TypeScript"],
+    "link": "https://sapporoalex.github.io/Seishinkai/"
   },
   {
     "id": "2",
-    "img": "works/gamerblog.webp",
+    "poster": "works/marugame.webp",
+    "i18nKey": "works.marugame",
+    "date": "2026.6",
+    "roles": ["Developer"],
+    "tools": ["Gulp", "CMS"]
+  },
+  {
+    "id": "3",
+    "poster": "works/gyoren.webp",
+    "i18nKey": "works.gyoren",
+    "date": "2026.3",
+    "roles": ["Lead Developer"],
+    "tools": ["Astro", "SCSS"],
+    "link": "https://www.gyoren.or.jp/"
+  },
+  {
+    "id": "4",
+    "poster": "works/mebs.webp",
+    "i18nKey": "works.mebs",
+    "date": "2026.1",
+    "roles": ["Director", "Developer"],
+    "tools": ["Vue", "Tailwind"]
+  },
+  {
+    "id": "5",
     "poster": "works/gamerblog.webp",
-    "videoWebm": "works/gamerblog.webm",
-    "videoMp4": "works/gamerblog.mp4",
     "i18nKey": "works.gamerblog",
+    "date": "2025.8",
+    "roles": ["Director", "Developer", "Designer"],
     "tools": ["HTML5", "CSS", "JavaScript", "EJS"],
     "link": "https://sapporoalex.github.io/MM-blog-site/index.html"
   },
   {
-    "id": "3",
-    "img": "works/artist.webp",
+    "id": "6",
+    "poster": "works/oztools.webp",
+    "i18nKey": "works.OzTools",
+    "date": "2025.7",
+    "roles": ["Developer", "Designer"],
+    "tools": ["React", "TypeScript", "Node.JS", "Python"],
+    "link": "https://oztoolsreactfrontend.onrender.com/"
+  },
+  {
+    "id": "7",
     "poster": "works/artist.webp",
-    "videoWebm": "works/artist.webm",
-    "videoMp4": "works/artist.mp4",
     "i18nKey": "works.artistPortfolio",
+    "date": "2025.5",
+    "roles": ["Director", "Developer", "Designer"],
     "tools": ["React", "CSS", "TypeScript", "Python"],
     "link": "https://sapporoalex.github.io/Dagny-Portfolio/"
   },
   {
-    "id": "4",
-    "img": "works/hgames.webp",
+    "id": "8",
     "poster": "works/hgames.webp",
-    "videoWebm": "works/hgames.webm",
-    "videoMp4": "works/hgames.mp4",
     "i18nKey": "works.gamingSite",
+    "date": "",
+    "roles": ["Developer", "Designer"],
     "tools": ["Django", "HTML5", "CSS", "JavaScript", "TypeScript", "SQLite"],
     "link": "https://hamster-games.onrender.com/"
   },
   {
-    "id": "5",
-    "img": "works/hh.webp",
+    "id": "9",
     "poster": "works/hh.webp",
-    "videoWebm": "works/hh.webm",
-    "videoMp4": "works/hh.mp4",
     "i18nKey": "works.happyHarry",
+    "date": "",
+    "roles": ["Developer", "Designer"],
     "tools": ["HTML5", "CSS", "JavaScript"],
     "link": "https://sapporoalex.github.io/Happy-Harry-s-Restaurant-App/index.html"
   },
   {
-    "id": "6",
-    "img": "works/oztools.webp",
-    "poster": "works/oztools.webp",
-    "videoWebm": "works/oztools.webm",
-    "videoMp4": "works/oztools.mp4",
-    "i18nKey": "works.OzTools",
-    "tools": ["React", "TypeScript", "Node.JS", "Python"],
-    "link": "https://oztoolsreactfrontend.onrender.com/"
+    "id": "10",
+    "poster": "works/xcorp.webp",
+    "i18nKey": "works.xcorp",
+    "date": "",
+    "roles": ["Designer", "Developer"],
+    "tools": ["React", "TypeScript"],
+    "link": "https://sapporoalex.github.io/xCorp/"
   }
 ]

@@ -19,10 +19,10 @@ const GridWorks: React.FC = () => {
                     <WorkCard
                         key={work.id}
                         img={imgPath}
-                        videoWebm={`${import.meta.env.BASE_URL}${work.videoWebm?.replace(/^\//, '')}`}
-                        videoMp4={`${import.meta.env.BASE_URL}${work.videoMp4?.replace(/^\//, '')}`}
                         i18nKey={work.i18nKey}
                         link={work.link}
+                        date={work.date}
+                        roles={work.roles}
                         tools={work.tools}
                     />
                 );

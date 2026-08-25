@@ -2,15 +2,33 @@
 
 .tag {
     display: flex;
-    border: 1px solid variables.$color-accent;
-    background-color: variables.$color-primary;
     border-radius: 5px;
     padding: 2px 4px;
 }
 .tag-text {
-    color: variables.$color-text;
     line-height: 1rem;
     margin: 0;
     font-size: 12px;
     font-family: 'Inter';
+}
+
+.tag--tool {
+    border: 1px solid variables.$color-accent;
+    background-color: variables.$color-primary;
+
+    .tag-text {
+        color: variables.$color-text;
+    }
+}
+
+.tag--role {
+    border: none;
+    border-radius: 999px;
+    padding: 2px 8px;
+    background-image: variables.$color-secondary-gradient;
+
+    .tag-text {
+        color: variables.$color-primary;
+        font-weight: 600;
+    }
 }
