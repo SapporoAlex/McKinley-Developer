@@ -14,10 +14,15 @@
 
 .contact-section {
   position: relative;
-  padding: 120px 0;
+  padding: variables.$section-padding-desktop 0;
   height: auto;
-  background-color: variables.$color-background;
-  overflow-x: hidden;
+  background-image: variables.$color-primary-gradient;
+  overflow: hidden;
+
+  .main-container {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .contact-wrapper {
@@ -25,7 +30,7 @@
   grid-template-columns: minmax(0, 1.1fr) minmax(260px, 380px);
   align-items: center;
   gap: 60px;
-  margin-top: 50px;
+  margin-top: variables.$section-heading-gap-desktop;
 }
 
 .contact-card {
@@ -146,11 +151,21 @@
   object-position: center center;
 }
 
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: variables.$section-padding-tablet 0;
+  }
+}
+
 @media (max-width: 768px) {
+  .contact-section {
+    padding: variables.$section-padding-mobile 0;
+  }
+
   .contact-wrapper {
     grid-template-columns: 1fr;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: variables.$section-heading-gap-mobile;
   }
 
   .contact-image-frame {

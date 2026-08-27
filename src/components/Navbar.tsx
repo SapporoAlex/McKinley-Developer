@@ -38,6 +38,7 @@ const Navbar: React.FC = () => {
             {/* Desktop links */}
             <nav className="nav-links">
               <a href="#top">{t('header.top')}</a>
+              <a href="#work-history">{t('header.workHistory')}</a>
               <a href="#tools">{t('header.tools')}</a>
               <a href="#works">{t('header.works')}</a>
               <a href="#contact">{t('header.contact')}</a>
@@ -63,6 +64,9 @@ const Navbar: React.FC = () => {
             <div ref={menuRef} className={`mobile-menu ${menuOpen ? 's-right-in' : ''}`}>
               <a href="#top" onClick={() => setMenuOpen(false)}>
                 {t('header.top')}
+              </a>
+              <a href="#work-history" onClick={() => setMenuOpen(false)}>
+                {t('header.workHistory')}
               </a>
               <a href="#tools" onClick={() => setMenuOpen(false)}>
                 {t('header.tools')}

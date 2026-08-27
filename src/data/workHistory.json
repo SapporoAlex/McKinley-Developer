@@ -1,14 +1,18 @@
 [
   {
+    "year": "2026.9",
+    "key": "entry1"
+  },
+  {
     "year": "2025.4",
-    "text": "Oz Creative, Sapporo Hokkaido: full-time frontend developer, project director"
+    "key": "entry2"
   },
   {
     "year": "2024.7",
-    "text": "Freelance: frontend developer"
+    "key": "entry3"
   },
   {
     "year": "2023.7",
-    "text": "Value-Build, (remote): freelance automation, and data scientist"
+    "key": "entry4"
   }
 ]

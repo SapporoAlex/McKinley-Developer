@@ -1,0 +1,91 @@
+@use 'variables';
+
+@keyframes loadingSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    background: variables.$color-primary-gradient;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+
+    &--closing {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__brand {
+        position: absolute;
+        top: 28px;
+        left: 28px;
+        padding: 8px 16px;
+        background: #000000;
+        border: 1px solid variables.$color-accent-border;
+        border-radius: 8px;
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        text-transform: uppercase;
+        color: variables.$color-text;
+    }
+
+    &__spinner {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: conic-gradient(
+            from 0deg,
+            transparent 0deg,
+            transparent 260deg,
+            variables.$color-accent-border 345deg,
+            #ffffff 360deg
+        );
+        -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 5px), #000 calc(100% - 5px));
+        mask: radial-gradient(farthest-side, transparent calc(100% - 5px), #000 calc(100% - 5px));
+        filter:
+            drop-shadow(0 0 8px variables.$color-accent-border)
+            drop-shadow(0 0 18px variables.$color-accent-border);
+        animation: loadingSpin 1s linear infinite;
+    }
+
+    &__text {
+        margin: 0;
+        display: flex;
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        color: variables.$color-text;
+    }
+
+    &__dots {
+        display: inline-block;
+        width: 1.4em;
+        text-align: left;
+        color: variables.$color-accent-border;
+    }
+}
+
+@media (max-width: 768px) {
+    .loading-screen {
+        &__brand {
+            top: 18px;
+            left: 18px;
+            padding: 6px 12px;
+            font-size: 11px;
+            letter-spacing: 0.1rem;
+        }
+    }
+}

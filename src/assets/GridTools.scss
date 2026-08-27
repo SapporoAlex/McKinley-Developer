@@ -1,8 +1,15 @@
 @use 'variables';
 
 .tools-section {
-  padding: 120px 0px 160px 0;
-  background-color: variables.$color-background;
+  position: relative;
+  padding: variables.$section-padding-desktop 0;
+  background-image: variables.$color-primary-gradient;
+  overflow: hidden;
+
+  .main-container {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .grid-tools {
@@ -12,8 +19,7 @@
   justify-items: center;
   place-items: center;
   gap: 40px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: variables.$section-heading-gap-desktop;
 }
 
 @keyframes rotateY {
@@ -108,7 +114,17 @@
   object-fit: contain;
 }
 
+@media (max-width: 1024px) {
+  .tools-section {
+    padding: variables.$section-padding-tablet 0;
+  }
+}
+
 @media (max-width: 768px) {
+  .tools-section {
+    padding: variables.$section-padding-mobile 0;
+  }
+
   .grid-tools {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 100px));
@@ -116,8 +132,7 @@
     justify-items: center;
     place-items: center;
     gap: 40px;
-    // margin-top: 40px;
-    // margin-bottom: 40px;
+    margin-top: variables.$section-heading-gap-mobile;
   }
   .tool-card {
     perspective: 1000px;

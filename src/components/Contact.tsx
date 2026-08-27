@@ -29,6 +29,7 @@ const Contact: React.FC = () => {
     return (
 
         <section id="contact" className="contact-section">
+            <div className="bg-wrapper" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg_image.webp)` }}></div>
             <div className="main-container">
                                     <h1 className="title" lang="en">Contact</h1>
                 <div className="contact-wrapper">

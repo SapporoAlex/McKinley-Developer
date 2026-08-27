@@ -222,6 +222,15 @@
     }
 }
 
+@keyframes workCardScrollFadeBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
 .work-card-modal-overlay {
     position: fixed;
     inset: 0;
@@ -246,7 +255,7 @@
     width: 100%;
     max-width: 560px;
     max-height: 90vh;
-    overflow-y: auto;
+    overflow: hidden;
     background-color: variables.$color-secondary;
     border: 1px solid variables.$color-accent-border;
     border-radius: 20px;
@@ -273,6 +282,52 @@
         z-index: 5;
         pointer-events: none;
         animation: workCardModalEdgeSweepIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    &__scroll {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__scroll-fade {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 90px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 6, 48, 0) 0%,
+            variables.$color-secondary 65%,
+            variables.$color-secondary 100%
+        );
+        opacity: 0;
+        transition: opacity 0.25s ease;
+        pointer-events: none;
+        z-index: 4;
+
+        &--visible {
+            opacity: 1;
+        }
+
+        &-chevron {
+            color: variables.$color-accent-border;
+            filter: drop-shadow(0 0 6px variables.$color-accent-border);
+            animation: workCardScrollFadeBounce 1.4s ease-in-out infinite;
+        }
     }
 
     &__image-frame {
@@ -337,6 +392,19 @@
     padding: 0 24px;
     border-radius: 10px;
     margin-top: 28px;
+    gap: 8px;
+    background: variables.$color-cta;
+    color: variables.$color-primary;
+    transform: none;
+
+    &:hover,
+    &:focus-visible {
+        transform: translateY(-2px);
+    }
+}
+
+.work-card-modal__visit-icon {
+    flex-shrink: 0;
 }
 
 .work-card-modal__close {

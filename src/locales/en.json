@@ -1,6 +1,7 @@
 {
     "header": {
         "top": "Top",
+        "workHistory": "History",
         "tools": "Toolbox",
         "works": "Works",
         "contact": "Contact"
@@ -15,7 +16,13 @@
         "title": "Toolbox"
     },
     "workHistory": {
-        "title": "Work History"
+        "title": "Work History",
+        "entries": {
+            "entry1": "Oz Creative, Sapporo Hokkaido: Promoted from Ravi, full-time developer, project director",
+            "entry2": "Ravi (owned by Oz Creative), Sapporo Hokkaido: Full-time frontend developer, project director",
+            "entry3": "Freelance: Frontend developer, building and maintaining websites",
+            "entry4": "Freelance: Automation specialist, and data scientist performing webscraping, data cleaning and visualisation"
+        }
     },
     "contact": {
         "title": "Contact",
@@ -24,46 +31,37 @@
         "copy": "Copy email",
         "copied": "Copied!"
     },
-    
+    "common": {
+        "liveSite": "Live Site",
+        "close": "Close"
+    },
+
     "works": {
         "seishinkaiKarate": {
             "title": "Seishinkai Karate",
-            "desc": "I personally reached out to this client and redesigned and rebuilt their 30 year old website. I improved SEO, customer join up rate, and user accessibilty",
+            "desc": "A solo project where I handled proposal, client communication, design, development, deployment, and maintenence. I redesigned and rebuilt their 30 year old website greatly improving SEO, customer join up rate, and UX. The owner was very satisfied with the work and designated me to handle future updates.",
             "alt": "Seishinkai"
         },
-        "xcorp": {
-            "title": "Corporate Site",
-            "desc": "Modern professional corporate site.",
-            "alt": "corporate website preview"
-        },
-
         "gamerblog": {
             "title": "Gamer Blog Site",
-            "desc": "Blog site with a retro gamer theme",
+            "desc": "Blog site designed and developed to replace a twitch streamer/Youtuber's old site. The new design better reflects the client's CI as a gamer, and has improved UX and SEO.",
             "alt": "gamer blog website preview"
         },
 
         "artistPortfolio": {
             "title": "Artist Portfolio",
-            "desc": "Displaying works from several exhibitions",
+            "desc": "The client asked for an LP displaying the variety of her work as an artist that users could get an understanding of at a glance. This site is reachable by QR code on her business cards, and displays hand-picked works from her most recent exhibitions. This low-tech solution helps her engagement with future clients.",
             "alt": "visual artist portfolio landing page"
         },
 
         "gamingSite": {
             "title": "Gaming Site",
-            "desc": "Games I've made in a Django site",
+            "desc": "Built as a personal project, this site contains in-browser playable games I build in my free-time. Currently over a dozen of my games are avaialble to play.",
             "alt": "gaming site"
         },
-
-        "happyHarry": {
-            "title": "Fast-Food PWA",
-            "desc": "Mobile-first restaurant progressive web app",
-            "alt": "fast-food mobile site"
-        },
-
         "OzTools": {
             "title": "Dev Tools Site",
-            "desc": "Site with 8 built-in tools in Node.js and python for developers",
+            "desc": "A utility site with 11 built-in tools for developers and designers. I add new custom built tools for my coworkers to use.",
             "alt": "developer tools site"
         },
 

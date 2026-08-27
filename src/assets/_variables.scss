@@ -19,3 +19,13 @@ $color-text:       #ffffff;
 $color-text-dark: #b6b6b6;
 
 $color-accent-border:#47f3ff;
+
+// Vertical rhythm — shared padding scale so every content section
+// (KV excluded, it's a full-viewport hero) breathes at the same rate.
+$section-padding-desktop: 140px;
+$section-padding-tablet: 100px;
+$section-padding-mobile: 72px;
+
+// Space between a section's title and its first row of content.
+$section-heading-gap-desktop: 48px;
+$section-heading-gap-mobile: 32px;
