@@ -1,24 +1,15 @@
-
 $color-background: #000000;
-$color-primary:    rgb(0, 14, 31);
-$color-primary-gradient: linear-gradient(
-  135deg,
-    rgb(7, 12, 24),
-  #000416
-);
-$color-secondary-gradient: linear-gradient(
-  135deg,
-    #ffffff,
-  #2cd0ec
-);
-$color-secondary:  #000630;
-$color-secondary-glass:#3c4955bb;
-$color-accent:     #2cd0ec;
-$color-cta:     #f5f109;
-$color-text:       #ffffff;
+$color-primary: rgb(0, 14, 31);
+$color-primary-gradient: linear-gradient(135deg, rgb(7, 12, 24), #000416);
+$color-secondary-gradient: linear-gradient(135deg, #ffffff, #2cd0ec);
+$color-secondary: #000630;
+$color-secondary-glass: #3c4955d0;
+$color-accent: #2cd0ec;
+$color-cta: #f5f109;
+$color-text: #ffffff;
 $color-text-dark: #b6b6b6;
 
-$color-accent-border:#47f3ff;
+$color-accent-border: #47f3ff;
 
 // Vertical rhythm — shared padding scale so every content section
 // (KV excluded, it's a full-viewport hero) breathes at the same rate.

@@ -1,5 +1,5 @@
-@use 'variables';
-@use 'states' as *;
+@use "variables";
+@use "states" as *;
 
 .navbar-container {
   position: sticky;
@@ -42,7 +42,7 @@
       .nav-logo {
         transform: scaleX(120%);
         display: flex;
-        height:40px;
+        height: 40px;
         width: auto;
       }
     }
@@ -62,8 +62,8 @@
     flex: 1;
     flex-direction: row;
     justify-content: space-evenly;
-      gap: 30px;
-      padding-right: 30px;
+    gap: 30px;
+    padding-right: 30px;
     a {
       text-decoration: none;
       color: variables.$color-text;
@@ -117,7 +117,6 @@
     right: -40%;
     display: flex;
     flex-direction: column;
-    padding-right: 1rem;
     background-color: variables.$color-secondary-glass;
     box-shadow: 0 5px 15px variables.$color-accent-border;
     border-radius: 20px;
@@ -125,8 +124,8 @@
     transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 998;
-    width: 100px;
-    text-align: right;
+    width: 150px;
+    text-align: center;
     a {
       padding: 0.5rem 0;
       text-decoration: none;
@@ -139,5 +138,4 @@
     top: 100px;
     right: 5%;
   }
-
 }
