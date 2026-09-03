@@ -22,8 +22,7 @@
     "i18nKey": "works.gyoren",
     "date": "2026.3",
     "roles": ["Lead Developer"],
-    "tools": ["Astro", "SCSS"],
-    "link": "https://www.gyoren.or.jp/hokkaidos_fish/osakanazukan/"
+    "tools": ["Astro", "SCSS"]
   },
   {
     "id": "4",
