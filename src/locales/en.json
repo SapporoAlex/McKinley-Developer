@@ -8,7 +8,7 @@
     },
     "top": {
         "title": "Alex McKinley, ",
-        "title-position": "Frontend Engineer",
+        "title-position": "Engineer",
         "text": "I build and maintain websites for businesses and individuals.",
         "button": "See Works"
     },
@@ -21,7 +21,7 @@
             "entry1": "Oz Creative, Sapporo Hokkaido: Promoted from Ravi, full-time developer, project director",
             "entry2": "Ravi (owned by Oz Creative), Sapporo Hokkaido: Full-time frontend developer, project director",
             "entry3": "Freelance: Frontend developer, building and maintaining websites",
-            "entry4": "Freelance: Automation specialist, and data scientist performing webscraping, data cleaning and visualisation"
+            "entry4": "Freelance: Automation specialist, and data engineer performing webscraping, data cleaning and visualisation"
         }
     },
     "contact": {
@@ -39,48 +39,48 @@
     "works": {
         "seishinkaiKarate": {
             "title": "Seishinkai Karate",
-            "desc": "A solo project where I handled proposal, client communication, design, development, deployment, and maintenence. I redesigned and rebuilt their 30 year old website greatly improving SEO, customer join up rate, and UX. The owner was very satisfied with the work and designated me to handle future updates.",
+            "desc": "Their 30-year-old website was holding them back on SEO and customer join-up rate. As a solo project, I handled the full lifecycle myself — proposal, client communication, design, development, deployment, and maintenance — to redesign and rebuild the site from the ground up. The result was a major lift in SEO, join-up rate, and overall UX, and the owner was satisfied enough to keep me on for all future updates.",
             "alt": "Seishinkai"
         },
         "gamerblog": {
             "title": "Gamer Blog Site",
-            "desc": "Blog site designed and developed to replace a twitch streamer/Youtuber's old site. The new design better reflects the client's CI as a gamer, and has improved UX and SEO.",
+            "desc": "The client, a Twitch streamer and YouTuber, felt his old site no longer reflected who he was as a creator. I designed and built a replacement blog site around his gamer identity, which improved both UX and SEO in the process.",
             "alt": "gamer blog website preview"
         },
 
         "artistPortfolio": {
             "title": "Artist Portfolio",
-            "desc": "The client asked for an LP displaying the variety of her work as an artist that users could get an understanding of at a glance. This site is reachable by QR code on her business cards, and displays hand-picked works from her most recent exhibitions. This low-tech solution helps her engagement with future clients.",
+            "desc": "The client, a visual artist, needed a way for new contacts to grasp the range of her work at a glance from nothing more than a business card. I built a landing page reachable via QR code, curating hand-picked pieces from her most recent exhibitions. This low-tech solution has made it easier for her to engage with future clients.",
             "alt": "visual artist portfolio landing page"
         },
 
         "gamingSite": {
             "title": "Gaming Site",
-            "desc": "Built as a personal project, this site contains in-browser playable games I build in my free-time. Currently over a dozen of my games are avaialble to play.",
+            "desc": "I wanted a public showcase for the browser games I build in my free time. I designed and developed the platform myself as a personal project, and now maintain a growing library of in-browser playable games — currently over a dozen.",
             "alt": "gaming site"
         },
         "OzTools": {
             "title": "Dev Tools Site",
-            "desc": "A utility site with 11 built-in tools for developers and designers. I add new custom built tools for my coworkers to use.",
+            "desc": "My coworkers needed quick access to a handful of small dev and design utilities scattered across different tools. I built a single utility site to consolidate them, and keep adding new custom-built tools as needs come up — currently 11 and counting.",
             "alt": "developer tools site"
         },
 
         "gyoren": {
-            "title": "Gyoren Fisheries Hokkaido",
-            "desc": "An interactive digital fish encyclopedia for Hokkaido's fisheries federation, sharing bite-sized stories about local seafood. I was head developer, making the key functionality and tech stack decisions.",
-            "alt": "Gyoren Hokkaido fish encyclopedia preview"
+            "title": "Fisheries Federation Digital Encyclopedia",
+            "desc": "This client, a fisheries federation in Hokkaido, wanted an engaging way to share bite-sized stories about local seafood with the public. As head developer, I made the key functionality and tech stack decisions behind an interactive digital fish encyclopedia, giving visitors an approachable way to explore the region's catch.",
+            "alt": "Fisheries federation fish encyclopedia preview"
         },
 
         "mebs": {
-            "title": "MEBS Kids Tablet App",
-            "desc": "A tablet-first educational experience for Mitsubishi Electric Building Solutions, teaching kids how elevators and escalators work. I directed and developed the project, working between the Japanese designers/client and a Malaysian development team.",
-            "alt": "MEBS kids elevator and escalator exploration app preview"
+            "title": "Private Client Kids Tablet App",
+            "desc": "This client needed a way to teach kids how elevators and escalators work through a tablet-first educational experience. I co-directed and developed the project, bridging the Japanese design/client side with a Malaysian development team to bring it to life.",
+            "alt": "Private client kids elevator and escalator exploration app preview"
         },
 
         "marugame": {
-            "title": "Marugame Seimen Summer Campaign",
-            "desc": "A seasonal summer campaign landing page for Marugame Seimen, the udon restaurant chain. I worked as developer, building the page with Gulp against their CMS.",
-            "alt": "Marugame Seimen summer campaign landing page preview"
+            "title": "Private Client Summer Campaign",
+            "desc": "This client, an udon restaurant chain, needed a landing page to support their summer campaign. I built the page as developer, working with Gulp against their existing CMS to get it live.",
+            "alt": "Private client summer campaign landing page preview"
         }
     }
 

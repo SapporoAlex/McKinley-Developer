@@ -10,7 +10,7 @@
   },
   {
     "id": "2",
-    "poster": "works/marugame.webp",
+    "poster": "works/private-company.webp",
     "i18nKey": "works.marugame",
     "date": "2026.6",
     "roles": ["Developer"],
@@ -18,7 +18,7 @@
   },
   {
     "id": "3",
-    "poster": "works/gyoren.webp",
+    "poster": "works/private-company.webp",
     "i18nKey": "works.gyoren",
     "date": "2026.3",
     "roles": ["Lead Developer"],
@@ -27,7 +27,7 @@
   },
   {
     "id": "4",
-    "poster": "works/mebs.webp",
+    "poster": "works/private-company.webp",
     "i18nKey": "works.mebs",
     "date": "2026.1",
     "roles": ["Director", "Developer"],

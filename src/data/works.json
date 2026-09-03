@@ -10,6 +10,31 @@
   },
   {
     "id": "2",
+    "poster": "works/private-company.webp",
+    "i18nKey": "works.marugame",
+    "date": "2026.6",
+    "roles": ["Developer"],
+    "tools": ["Gulp", "CMS"]
+  },
+  {
+    "id": "3",
+    "poster": "works/private-company.webp",
+    "i18nKey": "works.gyoren",
+    "date": "2026.3",
+    "roles": ["Lead Developer"],
+    "tools": ["Astro", "SCSS"],
+    "link": "https://www.gyoren.or.jp/hokkaidos_fish/osakanazukan/"
+  },
+  {
+    "id": "4",
+    "poster": "works/private-company.webp",
+    "i18nKey": "works.mebs",
+    "date": "2026.1",
+    "roles": ["Director", "Developer"],
+    "tools": ["Vue", "Tailwind"]
+  },
+  {
+    "id": "5",
     "poster": "works/gamerblog.webp",
     "i18nKey": "works.gamerblog",
     "date": "2025.8",
@@ -18,7 +43,16 @@
     "link": "https://sapporoalex.github.io/MM-blog-site/index.html"
   },
   {
-    "id": "3",
+    "id": "6",
+    "poster": "works/oztools.webp",
+    "i18nKey": "works.OzTools",
+    "date": "2025.7",
+    "roles": ["Developer", "Designer"],
+    "tools": ["React", "TypeScript", "Node.JS", "Python"],
+    "link": "https://oztoolsreactfrontend.onrender.com/"
+  },
+  {
+    "id": "7",
     "poster": "works/artist.webp",
     "i18nKey": "works.artistPortfolio",
     "date": "2025.5",
@@ -27,7 +61,7 @@
     "link": "https://sapporoalex.github.io/Dagny-Portfolio/"
   },
   {
-    "id": "4",
+    "id": "8",
     "poster": "works/hgames.webp",
     "i18nKey": "works.gamingSite",
     "date": "2024.6",
