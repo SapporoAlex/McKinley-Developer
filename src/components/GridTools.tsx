@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionTitle from './SectionTitle';
 import '../assets/GridTools.scss';
 import '../assets/Shared.scss';
 
@@ -19,7 +20,7 @@ const GridTools: React.FC = () => {
         <section id="tools" className="tools-section">
             <div className="bg-wrapper" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg_image.webp)` }}></div>
             <div className="main-container">
-                <h1 className="title" lang="en">Toolbox</h1>
+                <SectionTitle text="Toolbox" lang="en" />
                 <div className="grid-tools">
                     {tools.map((tool) => (
                         <div key={tool.id} className="tool-card">

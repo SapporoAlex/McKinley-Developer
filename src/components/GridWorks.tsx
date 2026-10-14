@@ -1,6 +1,7 @@
 import React from 'react';
 import worksData from '../data/works.json';
 import WorkCard from './WorkCard';
+import SectionTitle from './SectionTitle';
 import '../assets/GridWorks.scss';
 import '../assets/Shared.scss';
 
@@ -11,7 +12,7 @@ const GridWorks: React.FC = () => {
         <section id="works" className="works-section">
             <div className="bg-wrapper" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}bg_image.webp)` }}></div>
             <div className="main-container">
-            <h1 className="title" lang="en">Works</h1>
+            <SectionTitle text="Works" lang="en" />
             <div className="grid-works">
             {worksData.map((work: any) => {
                 const imgPath = `${import.meta.env.BASE_URL}${work.poster.replace(/^\//, '')}`;

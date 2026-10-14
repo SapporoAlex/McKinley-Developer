@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SectionTitle from "./SectionTitle";
 import "../assets/Contact.scss";
 import "../assets/Shared.scss";
 import { useTranslation } from "react-i18next";
@@ -40,9 +41,7 @@ const Contact: React.FC = () => {
         }}
       ></div>
       <div className="main-container">
-        <h1 className="title" lang="en">
-          Contact
-        </h1>
+        <SectionTitle text="Contact" lang="en" />
         <div className="contact-wrapper">
           <div className="contact-card">
             <p className="contact-text">{t("contact.text")}</p>
