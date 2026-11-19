@@ -13,7 +13,8 @@
         "button": "See Works"
     },
     "tools": {
-        "title": "Toolbox"
+        "title": "Toolbox",
+        "text": "さまざまなフロントエンドのライブラリ、フレームワーク、言語を使用しています。"
     },
     "workHistory": {
         "title": "History",

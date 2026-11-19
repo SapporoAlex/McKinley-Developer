@@ -5,12 +5,13 @@ interface LoadingScreenProps {
     onDone: () => void;
 }
 
-const DOT_INTERVAL = 375;
-const DURATION = 1500;
+// Timeline (ms): logo fades in 1000 → fades out 600 → black fades away 800.
+const LOGO_IN = 1000;
+const LOGO_OUT = 600;
+const BLACK_OUT = 800;
 
 const LoadingScreen: React.FC<LoadingScreenProps> = ({ onDone }) => {
-    const [dots, setDots] = useState(0);
-    const [closing, setClosing] = useState(false);
+    const [phase, setPhase] = useState<'in' | 'out' | 'closing'>('in');
 
     useEffect(() => {
         const previousOverflow = document.body.style.overflow;
@@ -22,38 +23,36 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onDone }) => {
             document.body.style.paddingRight = `${scrollbarWidth}px`;
         }
 
-        const dotTimer = setInterval(() => {
-            setDots((current) => (current + 1) % 4);
-        }, DOT_INTERVAL);
-
-        const closeTimer = setTimeout(() => {
-            setClosing(true);
-        }, DURATION);
+        const t1 = setTimeout(() => setPhase('out'), LOGO_IN);
+        const t2 = setTimeout(() => setPhase('closing'), LOGO_IN + LOGO_OUT);
+        const t3 = setTimeout(onDone, LOGO_IN + LOGO_OUT + BLACK_OUT);
 
         return () => {
             document.body.style.overflow = previousOverflow;
             document.body.style.paddingRight = previousPaddingRight;
-            clearInterval(dotTimer);
-            clearTimeout(closeTimer);
+            clearTimeout(t1);
+            clearTimeout(t2);
+            clearTimeout(t3);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-
-    const handleTransitionEnd = (event: React.TransitionEvent<HTMLDivElement>) => {
-        if (event.target !== event.currentTarget) return;
-        if (closing) onDone();
-    };
 
     return (
         <div
-            className={`loading-screen ${closing ? 'loading-screen--closing' : ''}`}
-            onTransitionEnd={handleTransitionEnd}
+            className={`loading-screen loading-screen--${phase}`}
+            style={{
+                '--logo-in': `${LOGO_IN}ms`,
+                '--logo-out': `${LOGO_OUT}ms`,
+                '--black-out': `${BLACK_OUT}ms`,
+            } as React.CSSProperties}
+            role="status"
+            aria-label="Loading"
         >
-            <div className="loading-screen__brand">Alex McKinley FE</div>
-            <div className="loading-screen__spinner" aria-hidden="true"></div>
-            <p className="loading-screen__text">
-                Booting up
-                <span className="loading-screen__dots">{'.'.repeat(dots)}</span>
-            </p>
+            <img
+                className="loading-screen__logo"
+                src={`${import.meta.env.BASE_URL}logo.svg`}
+                alt=""
+            />
         </div>
     );
 };

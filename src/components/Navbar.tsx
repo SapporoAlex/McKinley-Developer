@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
       <header className="navbar">
         <div className="header-inner">
           <div className="nav-left">
-            <img className="nav-logo" src="favicon.svg" alt="AM logo" />
+            <img className="nav-logo" src={`${import.meta.env.BASE_URL}logo.svg`} alt="AM logo" />
           </div>
 
           <div className="nav-right">

@@ -13,7 +13,8 @@
         "button": "See Works"
     },
     "tools": {
-        "title": "Toolbox"
+        "title": "Toolbox",
+        "text": "I use a variety of frontend libraries, frameworks and languages."
     },
     "workHistory": {
         "title": "Work History",
