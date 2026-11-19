@@ -185,7 +185,9 @@ const Immersive: React.FC = () => {
             <div className="stop__content">
               <p className="mono-tag">// SYSTEM ONLINE</p>
               <h1 className="hero-title">
-                {t("top.title")}
+                {t("top.title1")}
+                <br />
+                {t("top.title2")}
                 <span lang="en">{t("top.title-position")}</span>
               </h1>
               <p className="hero-text">{t("top.text")}</p>

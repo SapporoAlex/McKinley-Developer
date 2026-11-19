@@ -12,7 +12,7 @@ const KV: React.FC = () => {
         <section id="top" className="top">
             <div className="container-section">
                 <div className="pair-box">    
-                    <h1 className="title">{t('top.title')}<span lang="en">{t('top.title-position')}</span></h1>
+                    <h1 className="title">{t('top.title1')}<br/>{t('top.title2')}<span lang="en">{t('top.title-position')}</span></h1>
                         <p>{t('top.text')}</p>
                         <div className="pair-b__cta">
                             <Button buttonLink="#works" text={t('top.button')} />

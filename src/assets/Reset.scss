@@ -32,11 +32,16 @@ body {
 }
 
 :lang(ja) {
-    font-family: 'Noto Sans JP', 'Inter', sans-serif;
+    font-family: 'Chakra Petch', 'Noto Sans JP', 'Inter', sans-serif;
 }
 
 h1, h2, h3, a, p, button {
     color: variables.$color-text;
+}
+
+h1, h2, h3 {
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 h1 {

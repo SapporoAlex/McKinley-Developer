@@ -18,6 +18,7 @@
 
 .navbar {
   background: variables.$color-secondary-glass;
+  background: rgba(2, 14, 28, 0.62);
   border-radius: 20px;
   border: 1px solid variables.$color-accent-border;
   max-width: 1200px;
@@ -119,6 +120,7 @@
     display: flex;
     flex-direction: column;
     background-color: variables.$color-secondary-glass;
+    background: rgba(2, 14, 28, 0.62);
     box-shadow: 0 5px 15px variables.$color-accent-border;
     border-radius: 20px;
     border: 1px solid variables.$color-accent-border;
